@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGM Bible College Student Registration</title>
+    <link rel="stylesheet" href="C:\xampp\htdocs\coby_work\css\styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url('data:image/svg+xml;utf8,<svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 3.586l-6.293 6.293a1 1 0 001.414 1.414L10 6.414l5.879 5.879a1 1 0 001.414-1.414L10 3.586z" clip-rule="evenodd"/></svg>') no-repeat right 10px center;
+            background-size: 12px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="timetables.html">Timetables</a></li>
+            <li><a href="payments.html">Payments</a></li>
+        </ul>
+    </nav>
+    <h2>EGM Bible College Student Registration</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        
+        <label for="faculty">Select Faculty:</label><br>
+        <select id="faculty" name="faculty" required>
+            <option value="" disabled selected>Select Faculty</option>
+            <option value="Faculty of Theology">Faculty of Theology</option>
+            <option value="Faculty of Divinity">Faculty of Divinity</option>
+            <option value="Faculty of Ministry">Faculty of Ministry</option>
+        </select><br><br>
+        
+        <label for="department">Select Department:</label><br>
+        <select id="department" name="department" required>
+            <option value="" disabled selected>Select Department</option>
+            <option value="Biblical Studies">Biblical Studies</option>
+            <option value="Pastoral Ministry">Pastoral Ministry</option>
+            <option value="Missions and Evangelism">Missions and Evangelism</option>
+            <option value="Theological Studies">Theological Studies</option>
+        </select><br><br>
+        
+        <label for="picture">Upload Picture:</label><br>
+        <input type="file" id="picture" name="picture" accept="image/*" required><br><br>
+        
+        <label for="certificate">Upload Certificate:</label><br>
+        <input type="file" id="certificate" name="certificate" accept=".pdf,.doc,.docx" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
